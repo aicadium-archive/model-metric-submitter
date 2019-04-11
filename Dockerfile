@@ -9,5 +9,6 @@ COPY start.sh .
 ENV SRC_URL "http://ingress/metrics"
 ENV DST_URL "https://span/v1/metrics"
 ENV API_KEY "token"
+ENV PUSH_INTERVAL 30
 
 CMD ["./start.sh"]
